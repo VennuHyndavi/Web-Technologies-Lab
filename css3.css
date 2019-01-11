@@ -1,0 +1,18 @@
+body{
+    background-color: aqua;
+}
+.first{
+    color:red;
+    font-style: italic;
+    font-size: 40px;
+}
+.second{
+    color: green;
+    font-weight:bold;
+    
+}
+.third{
+    color: crimson;
+    font-style: oblique;
+    font-size: 20px;
+}

@@ -1,0 +1,49 @@
+<html>
+<head>
+<script type="text/javascript">
+function move(arr,first,second)
+{
+    var temp;
+    temp = arr[first];
+    arr[first]=arr[second];
+    arr[second]=temp;
+    return arr;
+}
+function rangeBetween(a,b){
+    var arr=new Array();
+    for(var i=0;a<=b;i++)
+        arr[i]=a++;
+    
+    return arr;
+}
+function frequency(arr){
+var mf = 1;
+var m = 0;
+var item;
+for (var i=0; i<arr.length; i++)
+{
+        for (var j=i; j<arr.length; j++)
+        {
+                if (arr[i] == arr[j])
+                 m++;
+                if (mf<m)
+                {
+                  mf=m; 
+                  item = arr[i];
+                }
+        }
+    m=0;
+}
+return arr[mf];
+}
+</script>
+</head>
+<body>
+    <script type="text/javascript">
+        var a = [12,13,14,15,16,12,23];
+        document.writeln("the swapped array is="+exchange(a,-1,-2) );
+        document.writeln("the most frequent item is="+frequency(a));
+        document.writeln("the range between is ="+rangeBetween(3,7));
+   </script>
+</body>
+</html>
